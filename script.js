@@ -7,7 +7,7 @@ document.querySelectorAll('section').forEach(section => {
         section.style.backgroundColor = getRandomColor();
     });
     section.addEventListener('mouseout', () => {
-        section.style.backgroundColor = '#222'; // Reset to section color after hover
+        section.style.backgroundColor = ''; // Reset to default after hover
     });
 });
 
