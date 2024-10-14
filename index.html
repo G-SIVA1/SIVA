@@ -1,131 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha384-0tIfM6qAvZT5m1wFSwqZt87T4M48gMEn6PI0DbEzvWc1c7z5eiJtN2VoFmlgD1tN" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #222;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .progress {
+            background-color: #444;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            height: 25px;
+            background-color: #28a745; /* Green color */
+            text-align: center;
+            line-height: 25px; /* Center text vertically */
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .resume-button {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .resume-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#personal">Personal Details</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#personal">Personal Details</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-        <img src="images/profile.jpg" alt="G Siva Prasad" class="rounded-circle mb-3" width="150" height="150">
-        <h1 class="animate__animated animate__fadeInDown">Welcome to My Portfolio</h1>
+        <img src="images/profile.jpg" alt="G Siva Prasad" width="150" height="150" style="border-radius: 50%;">
+        <h1>Welcome to My Portfolio</h1>
     </header>
 
-    <div class="container">
-        <section id="home" class="py-5" data-aos="fade-up">
-            <h2>Home</h2>
-            <p>Hello, and welcome to my portfolio! I’m G Siva Prasad, a dedicated and passionate student in the field of Cybersecurity. Currently pursuing my studies at SRM Ramapuram, I’m committed to exploring and enhancing my skills in cybersecurity, ethical hacking, and information security. Here, you'll find more about my projects, education, and personal journey. I invite you to take a look around and discover how I blend technology and creativity in my work.</p>
-        </section>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Hello, and welcome to my portfolio! I’m G Siva Prasad, a dedicated and passionate student in the field of Cybersecurity. Currently pursuing my studies at SRM Ramapuram, I’m committed to exploring and enhancing my skills in cybersecurity, ethical hacking, and information security. Here, you'll find more about my projects, education, and personal journey. I invite you to take a look around and discover how I blend technology and creativity in my work.</p>
+    </section>
 
-        <section id="about" class="py-5" data-aos="fade-up">
-            <h2>About Me</h2>
-            <p>Hi, I'm G Siva Prasad, a passionate Cybersecurity student at SRM Ramapuram with a keen interest in both cybersecurity analysis and web development. My journey began with a fascination for technology and a desire to learn how to safeguard systems against potential threats while also creating innovative web solutions.</p>
-            <p>I’m passionate about being a cybersecurity analyst and web development.</p>
-            <p>Feel free to explore my portfolio to see my projects and achievements. I am excited about the future and look forward to making a meaningful impact in the fields of cybersecurity and web development.</p>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm G Siva Prasad, a passionate Cybersecurity student at SRM Ramapuram with a keen interest in both cybersecurity analysis and web development. My journey began with a fascination for technology and a desire to learn how to safeguard systems against potential threats while also creating innovative web solutions.</p>
+        <p>I’m passionate about being a cybersecurity analyst and web development.</p>
+        <p>Feel free to explore my portfolio to see my projects and achievements. I am excited about the future and look forward to making a meaningful impact in the fields of cybersecurity and web development.</p>
+    </section>
 
-        <p><strong>Download my resume:</strong></p>
-        <a href="resume.pdf" download class="btn btn-primary">Download Resume (PDF)</a>
-
-        <section id="projects" class="py-5" data-aos="fade-up">
-            <h2>Projects</h2>
-            <div class="project mb-4">
-                <h3>Project 1: BANK MANAGEMENT SYSTEM</h3>
-                <p>A Bank Management System is software designed to streamline and automate various banking operations, such as account handling, transactions, loans, and customer services. It enhances efficiency, ensures security, and provides better customer service, making banking processes more reliable and effective.</p>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h4>Cybersecurity</h4>
+            <div class="progress">
+                <div class="progress-bar" style="width: 65%;">65%</div>
             </div>
-            <div class="project mb-4">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
+        </div>
+        <div class="skill">
+            <h4>Web Development</h4>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%;">75%</div>
             </div>
-        </section>
-
-        <section id="education" class="py-5" data-aos="fade-up">
-            <h2>Education</h2>
-            <p><strong>Institution:</strong> SRM Institute of Science and Technology, Ramapuram</p>
-            <p><strong>Degree:</strong> Bachelor of Technology in Cybersecurity</p>
-            <p><strong>Year:</strong> 2023 - 2027</p>
-            <p><strong>Key Courses:</strong> Network Security, Ethical Hacking, Information Security, Digital Forensics</p>
-        </section>
-
-        <section id="personal" class="py-5" data-aos="fade-up">
-            <h2>Personal Details</h2>
-            <p><strong>Name:</strong> G SIVA PRASAD</p>
-            <p><strong>Location:</strong> India</p>
-            <p><strong>Date of Birth:</strong> 12th November 2005</p>
-            <p><strong>Hobbies:</strong> Exploring cybersecurity trends, Coding, Playing Chess</p>
-        </section>
-
-        <section id="contact" class="py-5" data-aos="fade-up">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Send</button>
-            </form>
-            <div class="contact-info">
-                <h3>Get in Touch</h3>
-                <p><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">+91 7569580061</a></p>
-                <p><strong>Email:</strong> <a href="mailto:your.email@example.com">gsivaprasad015@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/g-siva-prasad-030921290</a></p>
-                <p>
-                    <strong>Follow me:</strong>
-                    <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </p>
+        </div>
+        <div class="skill">
+            <h4>Networking</h4>
+            <div class="progress">
+                <div class="progress-bar" style="width: 55%;">55%</div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <p><strong>Download my resume:</strong></p>
+    <a href="resume.pdf" download class="resume-button">Download Resume (PDF)</a> <!-- Link to your resume file -->
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: BANK MANAGEMENT SYSTEM</h3>
+            <p>A Bank Management System is software designed to streamline and automate various banking operations, such as account handling, transactions, loans, and customer services. It enhances efficiency, ensures security, and provides better customer service, making banking processes more reliable and effective.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Institution:</strong> SRM Institute of Science and Technology, Ramapuram</p>
+        <p><strong>Degree:</strong> Bachelor of Technology in Cybersecurity</p>
+        <p><strong>Year:</strong> 2023 - 2027</p>
+        <p><strong>Key Courses:</strong> Network Security, Ethical Hacking, Information Security, Digital Forensics</p>
+    </section>
+
+    <section id="personal">
+        <h2>Personal Details</h2>
+        <p><strong>Name:</strong> G SIVA PRASAD</p>
+        <p><strong>Location:</strong> India</p>
+        <p><strong>Date of Birth:</strong> 12th November 2005</p>
+        <p><strong>Hobbies:</strong> Exploring cybersecurity trends, Coding, Playing Chess</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">+91 7569580061</a></p>
+            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">gsivaprasad015@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/g-siva-prasad-030921290</a></p>
+        </div>
+    </section>
+
+    <footer>
         <p>&copy; 2024 G SIVA PRASAD. All rights reserved.</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha384-0tIfM6qAvZT5m1wFSwqZt87T4M48gMEn6PI0DbEzvWc1c7z5eiJtN2VoFmlgD1tN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
     <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init();
-
-        // JavaScript Code
+        // Set the initial background color of the page to black
         document.body.style.backgroundColor = '#000';
 
         // Change background color of the sections when hovering
@@ -167,5 +231,4 @@
         });
     </script>
 </body>
-
 </html>
