@@ -3,85 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G SIVA PRASAD</title>
+    <title>G Siva Prasad - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha384-0tIfM6qAvZT5m1wFSwqZt87T4M48gMEn6PI0DbEzvWc1c7z5eiJtN2VoFmlgD1tN" crossorigin="anonymous"></script>
-    <style>
-        body {
-            background-color: #000;
-            color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        section {
-            padding: 20px;
-            background-color: #222;
-            margin: 20px 0;
-            border-radius: 8px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        .progress {
-            background-color: #444;
-            border-radius: 5px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-
-        .progress-bar {
-            height: 25px;
-            background-color: #28a745; /* Green color */
-            text-align: center;
-            line-height: 25px; /* Center text vertically */
-            color: white;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #111;
-        }
-
-        .resume-button {
-            display: block;
-            margin: 20px auto;
-            text-align: center;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .resume-button:hover {
-            background-color: #218838;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -91,78 +15,68 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#personal">Personal Details</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <img src="images/profile.jpg" alt="G Siva Prasad" width="150" height="150" style="border-radius: 50%;">
-        <h1>Welcome to My Portfolio</h1>
+        <div class="intro">
+            <img src="images/profile.jpg" alt="G Siva Prasad" class="profile-img">
+            <h1>G Siva Prasad</h1>
+            <p>Cybersecurity Student | Web Developer</p>
+        </div>
     </header>
-
-    <section id="home">
-        <h2>Home</h2>
-        <p>Hello, and welcome to my portfolio! I’m G Siva Prasad, a dedicated and passionate student in the field of Cybersecurity. Currently pursuing my studies at SRM Ramapuram, I’m committed to exploring and enhancing my skills in cybersecurity, ethical hacking, and information security. Here, you'll find more about my projects, education, and personal journey. I invite you to take a look around and discover how I blend technology and creativity in my work.</p>
-    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm G Siva Prasad, a passionate Cybersecurity student at SRM Ramapuram with a keen interest in both cybersecurity analysis and web development. My journey began with a fascination for technology and a desire to learn how to safeguard systems against potential threats while also creating innovative web solutions.</p>
-        <p>I’m passionate about being a cybersecurity analyst and web development.</p>
-        <p>Feel free to explore my portfolio to see my projects and achievements. I am excited about the future and look forward to making a meaningful impact in the fields of cybersecurity and web development.</p>
+        <p>Hi, I'm G Siva Prasad, a passionate Cybersecurity student at SRM Ramapuram. My focus is on Cybersecurity and Web Development, and I constantly strive to combine both my technical and creative skills to build secure, innovative solutions.</p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill">
-            <h4>Cybersecurity</h4>
-            <div class="progress">
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Cybersecurity</h3>
                 <div class="progress-bar" style="width: 65%;">65%</div>
             </div>
-        </div>
-        <div class="skill">
-            <h4>Web Development</h4>
-            <div class="progress">
+            <div class="skill">
+                <h3>Web Development</h3>
                 <div class="progress-bar" style="width: 75%;">75%</div>
             </div>
-        </div>
-        <div class="skill">
-            <h4>Networking</h4>
-            <div class="progress">
+            <div class="skill">
+                <h3>Networking</h3>
                 <div class="progress-bar" style="width: 55%;">55%</div>
             </div>
         </div>
     </section>
 
-    <p><strong>Download my resume:</strong></p>
-    <a href="resume.pdf" download class="resume-button">Download Resume (PDF)</a> <!-- Link to your resume file -->
-
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project 1: BANK MANAGEMENT SYSTEM</h3>
-            <p>A Bank Management System is software designed to streamline and automate various banking operations, such as account handling, transactions, loans, and customer services. It enhances efficiency, ensures security, and provides better customer service, making banking processes more reliable and effective.</p>
+            <h3>Bank Management System</h3>
+            <p>This system streamlines banking processes, enhancing security, efficiency, and customer service.</p>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of Project 2.</p>
+            <h3>Library Management System</h3>
+            <p>Built using DSA, this system efficiently organizes and manages library data.</p>
+        </div>
+        <div class="project">
+            <h3>Smart Food: Food Wastage Reduction</h3>
+            <p>Developed a web application to track and reduce food wastage through smart inventory management.</p>
         </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Institution:</strong> SRM Institute of Science and Technology, Ramapuram</p>
-        <p><strong>Degree:</strong> Bachelor of Technology in Cybersecurity</p>
-        <p><strong>Year:</strong> 2023 - 2027</p>
-        <p><strong>Key Courses:</strong> Network Security, Ethical Hacking, Information Security, Digital Forensics</p>
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="images/resume.pdf" download class="resume-button">Download My Resume (PDF)</a>
     </section>
 
     <section id="personal">
         <h2>Personal Details</h2>
-        <p><strong>Name:</strong> G SIVA PRASAD</p>
+        <p><strong>Name:</strong> G Siva Prasad</p>
         <p><strong>Location:</strong> India</p>
         <p><strong>Date of Birth:</strong> 12th November 2005</p>
-        <p><strong>Hobbies:</strong> Exploring cybersecurity trends, Coding, Playing Chess</p>
+        <p><strong>Hobbies:</strong> Cybersecurity, Web Development, Chess, Coding</p>
     </section>
 
     <section id="contact">
@@ -174,61 +88,20 @@
             <input type="email" id="email" name="email" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
         </form>
         <div class="contact-info">
             <h3>Get in Touch</h3>
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">+91 7569580061</a></p>
-            <p><strong>Email:</strong> <a href="mailto:your.email@example.com">gsivaprasad015@gmail.com</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/g-siva-prasad-030921290</a></p>
+            <p><strong>Email:</strong> <a href="mailto:gsivaprasad015@gmail.com">gsivaprasad015@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/g-siva-prasad-030921290" target="_blank">www.linkedin.com/in/g-siva-prasad-030921290</a></p>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 G SIVA PRASAD. All rights reserved.</p>
+        <p>&copy; 2024 G Siva Prasad. All rights reserved.</p>
     </footer>
 
-    <script>
-        // Set the initial background color of the page to black
-        document.body.style.backgroundColor = '#000';
-
-        // Change background color of the sections when hovering
-        document.querySelectorAll('section').forEach(section => {
-            section.addEventListener('mouseover', () => {
-                section.style.backgroundColor = getRandomColor();
-            });
-            section.addEventListener('mouseout', () => {
-                section.style.backgroundColor = '#222'; // Reset to section color after hover
-            });
-        });
-
-        // Change the color of the navbar links when clicked
-        document.querySelectorAll('nav ul li a').forEach(link => {
-            link.addEventListener('click', (event) => {
-                event.preventDefault(); // Prevent default behavior
-                document.querySelectorAll('nav ul li a').forEach(l => l.style.color = 'white'); // Reset all links
-                link.style.color = getRandomColor(); // Change clicked link color
-                const targetSection = document.querySelector(link.getAttribute('href'));
-                targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to section
-            });
-        });
-
-        // Generate a random color
-        function getRandomColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
-        }
-
-        // Display an alert when the contact form is submitted
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-            alert('Message sent successfully!'); // Show success message
-            this.reset(); // Reset form fields
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
