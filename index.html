@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G Siva Prasad — Cybersecurity & Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="lightfall-canvas" aria-hidden="true"></canvas>
+
+    <header class="nav-wrap">
+        <nav class="nav">
+            <a href="#home" class="logo">GSP<span class="cursor">_</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home" data-num="00">home</a></li>
+                <li><a href="#about" data-num="01">about</a></li>
+                <li><a href="#skills" data-num="02">skills</a></li>
+                <li><a href="#projects" data-num="03">projects</a></li>
+                <li><a href="#resume" data-num="04">resume</a></li>
+                <li><a href="#contact" data-num="05">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="eyebrow"><span class="status-dot"></span> system status: online</p>
+                    <h1 class="hero-title">
+                        <span class="line">G Siva</span>
+                        <span class="line accent">Prasad</span>
+                    </h1>
+                    <p class="hero-sub">
+                        Cybersecurity student building secure, well-engineered web applications.
+                        Currently exploring network defense, secure coding practices, and full-stack development.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View projects</a>
+                        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+                    </div>
+                </div>
+                <div class="hero-panel" aria-hidden="true">
+                    <div class="terminal">
+                        <div class="terminal-bar">
+                            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                            <span class="terminal-title">whoami.sh</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> whoami</p>
+                            <p class="out">g_siva_prasad</p>
+                            <p><span class="prompt">$</span> cat role.txt</p>
+                            <p class="out">Cybersecurity Student / Web Developer</p>
+                            <p><span class="prompt">$</span> cat focus.txt</p>
+                            <p class="out">Network Security · Secure Web Apps · DSA</p>
+                            <p><span class="prompt">$</span> <span class="typing-cursor">_</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-cue" aria-hidden="true">
+                <span>scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <p class="section-label">01 / about</p>
+            <div class="about-grid">
+                <div class="about-photo">
+                    <div class="photo-frame">
+                        <img src="images/profile.jpg" alt="Portrait of G Siva Prasad">
+                    </div>
+                </div>
+                <div class="about-copy">
+                    <h2 class="section-title">A bit about me</h2>
+                    <p>
+                        I'm G Siva Prasad, a Cybersecurity student at SRM Ramapuram with a strong
+                        interest in protecting systems and building software that's both useful
+                        and resilient. My work sits at the intersection of security and development —
+                        I like understanding how systems break so I can build ones that don't.
+                    </p>
+                    <p>
+                        Alongside coursework, I build full-stack projects to put security and
+                        software fundamentals into practice, from data structures and algorithms
+                        to web applications with real users in mind.
+                    </p>
+                    <dl class="about-facts">
+                        <div>
+                            <dt>Location</dt>
+                            <dd>India</dd>
+                        </div>
+                        <div>
+                            <dt>Focus areas</dt>
+                            <dd>Cybersecurity, Networking, Web Dev</dd>
+                        </div>
+                        <div>
+                            <dt>Interests</dt>
+                            <dd>Chess, Coding, Capture-the-Flag</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <p class="section-label">02 / skills</p>
+            <h2 class="section-title">What I work with</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-head">
+                        <h3>Cybersecurity</h3>
+                        <span class="skill-pct">65%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--pct: 65%"></div>
+                    </div>
+                    <p class="skill-desc">Security fundamentals, threat awareness, secure system design.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-head">
+                        <h3>Web Development</h3>
+                        <span class="skill-pct">75%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--pct: 75%"></div>
+                    </div>
+                    <p class="skill-desc">HTML, CSS, JavaScript, and building full-stack applications.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-head">
+                        <h3>Networking</h3>
+                        <span class="skill-pct">55%</span>
+                    </div>
+                    <div class="skill-track">
+                        <div class="skill-fill" style="--pct: 55%"></div>
+                    </div>
+                    <p class="skill-desc">Network protocols, infrastructure basics, and traffic analysis.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <p class="section-label">03 / projects</p>
+            <h2 class="section-title">Things I've built</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="project-tag">System</span>
+                        <h3>Bank Management System</h3>
+                    </div>
+                    <p>A system that streamlines core banking processes while keeping
+                       account data and transactions secure and well-organized.</p>
+                    <ul class="project-stack">
+                        <li>Database design</li>
+                        <li>Security-first logic</li>
+                    </ul>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="project-tag">DSA</span>
+                        <h3>Library Management System</h3>
+                    </div>
+                    <p>Built using core data structures and algorithms to efficiently
+                       organize, search, and manage library records.</p>
+                    <ul class="project-stack">
+                        <li>Data structures</li>
+                        <li>Algorithms</li>
+                    </ul>
+                </article>
+                <article class="project-card">
+                    <div class="project-head">
+                        <span class="project-tag">Web App</span>
+                        <h3>Smart Food: Food Wastage Reduction</h3>
+                    </div>
+                    <p>A web application that helps track surplus food and connects it
+                       to where it's needed, reducing avoidable waste.</p>
+                    <ul class="project-stack">
+                        <li>Full-stack</li>
+                        <li>Social impact</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- RESUME -->
+        <section id="resume" class="section section-narrow">
+            <p class="section-label">04 / resume</p>
+            <h2 class="section-title">Resume</h2>
+            <p class="resume-copy">
+                A quick overview of my education, skills, and project experience —
+                ready to download as a PDF.
+            </p>
+            <a href="images/resume.pdf" download class="btn btn-primary btn-lg">
+                Download resume (PDF)
+            </a>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <p class="section-label">05 / contact</p>
+            <div class="contact-grid">
+                <div class="contact-copy">
+                    <h2 class="section-title">Let's talk</h2>
+                    <p>
+                        Have a project, opportunity, or question? Send a message and
+                        I'll get back to you, or reach out directly below.
+                    </p>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:gsivaprasad015@gmail.com">gsivaprasad015@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">WhatsApp</span>
+                            <a href="https://wa.me/917569580061" target="_blank" rel="noopener">+91 75695 80061</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/g-siva-prasad-030921290" target="_blank" rel="noopener">g-siva-prasad</a>
+                        </li>
+                    </ul>
+                </div>
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send message</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 G Siva Prasad. Built with intent.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
